@@ -6,6 +6,7 @@ LOC_SET=0
 STATS=0
 function usage() {
   echo "USAGE: $0 ..."
+exit 1
 }
 
 while [ $# -gt 0 ]
@@ -34,7 +35,6 @@ do
         ;;
     * )
         usage
-        shift
         ;;
   esac
 done
